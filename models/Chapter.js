@@ -11,6 +11,6 @@ const chapterSchema = new mongoose.Schema({
   questionSolved: Number,
   status: { type: String, enum: ['Not Started', 'In Progress', 'Completed'] },
   isWeakChapter: Boolean
-}, { timestamps: false });
+}, { timestamps: true });
 
 module.exports = mongoose.model('Chapter', chapterSchema);
