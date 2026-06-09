@@ -6,6 +6,6 @@ const admin = require('../middlewares/adminMiddleware');
 
 router.get('/', controller.getChapters);
 router.get('/:id', controller.getChapterById);
-router.post('/', admin, upload.single('files'), controller.uploadChapters);
+router.post('/', admin, upload.single('file'), controller.uploadChapters);
 
 module.exports = router;
